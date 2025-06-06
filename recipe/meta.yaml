@@ -1,5 +1,5 @@
 {% set name = "mkdocs-monorepo-plugin" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mkdocs-monorepo-plugin-{{ version }}.tar.gz
-  sha256: ccc566e166aac5ae7fade498c15c4a337a4892d238629b51aba8ef3fc7099034
+  sha256: 09200bcf837ad35070e6da973aa0cb682e69ed6e16f254a30584550c6d2d8ebb
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
